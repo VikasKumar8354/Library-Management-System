@@ -13,7 +13,7 @@ import java.util.List;
 public class LibraryController {
 
     @Autowired
-    private LibraryService libraryService;
+    private final LibraryService libraryService;
 
     public LibraryController(LibraryService libraryService){
         this.libraryService = libraryService;

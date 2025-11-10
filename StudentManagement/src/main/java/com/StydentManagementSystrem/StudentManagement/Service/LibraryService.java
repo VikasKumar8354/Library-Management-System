@@ -15,11 +15,11 @@ import java.util.List;
 public class LibraryService {
 
     @Autowired
-    private LibraryRecordRepository libraryRecordRepository;
+    private final LibraryRecordRepository libraryRecordRepository;
     @Autowired
-    private StudentRepository studentRepository;
+    private final StudentRepository studentRepository;
     @Autowired
-    private BookRepository bookRepository;
+    private final BookRepository bookRepository;
 
     public LibraryService(LibraryRecordRepository libraryRecordRepository,StudentRepository studentRepository,BookRepository bookRepository){
         this.libraryRecordRepository = libraryRecordRepository;
